@@ -1,0 +1,106 @@
+.leaflet-container {
+    background: #FFF8F0 !important;
+}
+.leaflet-popup-content-wrapper {
+    display: inline-block !important;
+  	font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif !important;
+  	font-size: 12px !important;
+  	font-weight: bold !important;
+  	line-height: 16px !important;
+  	border-color: #eee #ddd #bbb !important;
+  	border-radius: 5px !important;
+  	border-style: solid !important;
+  	border-width: 1px !important;
+  	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) !important;
+  	margin: 10px 5px !important;
+  	padding: 0 16px 16px 16px !important;
+  	max-width: 468px !important;
+    max-height: 250px;
+    overflow: scroll !important;
+}
+.leaflet-popup-content {
+    font-size: 16px !important;
+  	font-weight: normal !important;
+  	line-height: 20px !important;
+}
+.leaflet-popup-tip-container {
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+    position: relative
+}
+.leaflet-popup-tip {
+    width: 0;
+    height: 0;
+    margin: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #fff;
+    box-shadow: none
+}
+.leaflet-popup-close-button {
+    text-indent: -999em;
+    position: absolute;
+    top: 10px !important;
+    right: 5px !important;
+    pointer-events: all
+}
+.leaflet-popup-close-button:hover {
+    background-color: #f8f8f8
+}
+.leaflet-popup-scrolled {
+    overflow: auto;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd
+}
+.leaflet-div-icon {
+    background: #fff;
+    border: 1px solid #999;
+    border-color: rgba(0, 0, 0, .4)
+}
+.leaflet-editing-icon {
+    border-radius: 3px
+}
+
+.user-info {
+    display: inline-block;
+    margin-top: 20px;
+}
+.name {
+    font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 16px;
+}
+.date {
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 16px;
+    display: inline-block;
+}
+.ticks {
+    font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 16px;
+    margin-top: 50px;
+}
+.ui-brush {
+    position:absolute;
+    bottom:0;right:0;left:0;
+    height:100px;
+    z-index: 100;
+}
+.brush-background {
+    background: #f8f8f8;
+    position:absolute;
+    bottom:0;right:0;left:0;
+    height:99px;
+    opacity: 0.8;
+    z-index: 99;
+}
+.brush .extent {
+    stroke:#fff;
+    fill-opacity:0.3;
+    shape-rendering:crispEdges;
+}
