@@ -4,11 +4,19 @@
         <meta charset=utf-8 />
         <title>Eurozone crisis timeline</title>
         <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+        <link rel="alternate" media="only screen and (max-width: 1000px)" href="/mobile" >
         <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.js'></script>
         <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.css' rel='stylesheet' />
         <link href='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.css' rel='stylesheet' />
         <link href='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.Default.css' rel='stylesheet' />
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <link href='css/custom_mapbox.css' rel='stylesheet' />
+        <link href='css/calendar.css' rel='stylesheet' />
+        <script>
+            if (window.matchMedia("(max-width: 1000px)").matches) {
+                 window.location = "mobile";
+            }
+        </script>
         <style>
             body { margin:0; padding:0; }
             #map { position:absolute; top:0; bottom:0; width:100%; }
@@ -17,6 +25,7 @@
     <body>
 
         <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.6/d3.min.js' charset="utf-8"></script>
+        <script src='http://code.jquery.com/jquery-2.1.4.min.js' charset="utf-8"></script>
 
         <div id='map' class='dark'></div>
         <div class='brush-background'></div>
